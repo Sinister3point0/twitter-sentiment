@@ -1,0 +1,47 @@
+import pandas as pd
+tweets.tocsv('tweets.csv', index=False)
+#create new columns
+df=pd.readcsv(r'C:\Users\me\Downloads\twitterdeal.csv')
+def getPolarity(text):
+df['polarity']=df[tweets'].apply(getPolarity)
+plt.axis('off)
+tweet=pd.readcsv('tweets.csv')
+ return text
+ else:
+ return TextBlob(text).sentiment.polarity
+ elif int(score)==int(0):
+df['analysis']=df['polarity].apply(get_analysis)
+ text= re.sub(r@[AZaz09]+', ', text) #removes the @
+import re
+ text=re.sub(r'“”', ', text) #removes one special character i found
+df['tweets]=df['tweet].apply(cleantxt)
+tweet[tweet'].astype(str)
+def get_analysis(score):
+ text=re.sub(r'#',' ' ' ', text) #removes the hashtags
+all_words=' '.join( [tweet for tweet in df['tweets']] )
+ return 'neutral
+from textblob import TextBlob
+ text=re.sub(r'RT[\s]+, '', text) #removes the retweets
+plt.imshow(wordcloud, interpolation='bilinear)
+ if int(score) > 0:
+wordcloud=WordCloud(width=500, randomstate=21, height=300, maxfontsize=119).generate(allwords)
+def getSubjectivity(text):
+import matplotlib.pyplot as plt
+ text=re.sub(r't.co/', '', text) #removes telegram links
+tweets=df['tweet']
+#tweet cleanup
+ return 'negative'
+def cleantxt(text):
+from wordcloud import WordCloud
+df['subjectivity]=df['tweets'].apply(getSubjectivity)
+ text=re.sub(r'https?:\/\/, '', text)#removes hyperlinks
+ return TextBlob(text).sentiment.subjectivity
+ return 'positive'
+#print all positive tweets
+plt.figure(figsize= (8, 6))
+plt.title(sentiment analysis')
+for i in range (0, df.shape[0]):
+plt.xlabel('polarity')
+plt.ylabel('subjectivity')
+ plt.scatter(df['polarity][i], df['subjectivity'][i], color='Blue')
+plt.show()
